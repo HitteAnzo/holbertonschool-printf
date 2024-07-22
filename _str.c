@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * 
+ * _str - function to print a string.
+ * @args: list of arguments.
+ * Return: i.
  */
-
 int _str(va_list args)
 {
     int i = 0;
