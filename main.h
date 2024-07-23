@@ -11,11 +11,11 @@
   * 
   */
 
-typedef struct check
+typedef struct specifiers
 {
-    char type;
+    char specifiers;
     int (*f)(va_list);
-}check;
+} specifiers_t;
 
 int _putchar(char c);
 int _printf(const char *format, ...);
