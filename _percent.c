@@ -6,7 +6,7 @@
  * Return: number of chars
  */
 
-int _percent(va_list)
+int _percent(va_list args)
 {
     _putchar('%');
     return (1);
