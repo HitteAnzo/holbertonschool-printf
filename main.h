@@ -8,10 +8,10 @@
 
 _putchar(char c);
 int _printf(const char *format, ...);
-int _int (va_list list);
-int _char (va_list list);
-int _str (va_list list);
-int _percent (va_list list);
+int _int (va_list args);
+int _char (va_list args);
+int _str (va_list args);
+int _percent (va_list args);
 int _format (va_list list);
 
 
