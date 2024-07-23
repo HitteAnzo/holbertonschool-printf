@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * format - function specifiers
+ * _format - function specifiers
  * @type: conversion specifiers
  * @args: arguments
  * 
  * Return: numcount
  */
-
 int _format(const char type, va_list args)
 {
-    int i = 0
+    int i = 0;
+    int numcount = 0;
 
     specifiers_t spec[] = {
         {'c', _char},
@@ -34,5 +34,5 @@ int _format(const char type, va_list args)
         numcount += _putchar(type);
     }
 
-    return(numcount)
+    return(numcount);
 }
