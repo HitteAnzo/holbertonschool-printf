@@ -5,7 +5,7 @@
  * @args: list of arguments.
  * Return: c.
  */
-int _char(va_list)
+int _char(va_list args)
 {
     char c = va_arg(args,  int);
     return (_putchar (c));
