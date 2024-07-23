@@ -17,7 +17,7 @@ typedef struct check
     int (*f)(va_list);
 }check;
 
-_putchar(char c);
+int _putchar(char c);
 int _printf(const char *format, ...);
 int _int (va_list args);
 int _char (va_list args);
