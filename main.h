@@ -6,6 +6,17 @@
 #include <stdarg.h>
 #include <unistd.h>
 
+ /**
+  * struct
+  * 
+  */
+
+typedef struct check
+{
+    char type;
+    int (*f)(va_list);
+}check;
+
 int _putchar(char c);
 int _printf(const char *format, ...);
 int _int (va_list args);
