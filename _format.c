@@ -10,7 +10,8 @@
 
 int _format(const char type, va_list args)
 {
-    int i = 0
+    int i = 0;
+    int numcount = 0;
 
     specifiers_t spec[] = {
         {'c', _char},
