@@ -19,6 +19,7 @@ int _printf(const char *format, ...)
     if (format[0] == '%' && format[1] == ' ' && !format[2]) /*check if format is '%' followed by space and null*/
         return (-1);
     if (format[0] = '%' && format[1] = ' ' && format[2] = ' ' && !format[3])
+        return (-1);
 
     for (i = 0; format[i] != '\0'; i++)
     {
