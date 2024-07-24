@@ -21,9 +21,9 @@ int _str(va_list args)
         return (6);
     }
 
-    if (str[0] == '')
+    if (str[i] == '')
     {
-        return 0; // Rien à imprimer
+        return (0);
     }
 
     while (str[i] != '\0')
