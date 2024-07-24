@@ -6,11 +6,11 @@
 
 ## Supported Specifiers
 
-- `%c` : Displays a character.
-- `%s` : Displays a string of characters.
-- `%%` : Displays a percent sign.
-- `%d` : Displays a decimal integer.
-- `%i` : Displays an integer.
+- `c` : Displays a character.
+- `s` : Displays a string of characters.
+- `%` : Displays a percent sign.
+- `d` : Displays a decimal integer.
+- `i` : Displays an integer.
 
 ## Main Functions
 
