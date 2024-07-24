@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * _int - print integer
- * @args: arguments
+ * _int - print integer.
+ * @args: arguments.
  * 
- * Return: count chars
+ * Return: count chars.
  */
 
 int _int(va_list args)
 {
-    long int num = va_args(args,int);
+    long int num = va_arg(args, int);
     int numcount = 0;
     int mul = 1;
     int div;
@@ -21,9 +21,9 @@ int _int(va_list args)
     }
 
     if (num < 10)
-        return (numcount += _putchar(digit + '0'));
+        return (numcount += _putchar(num + '0'));
 
-    div = num
+    div = num;
 
     while (div > 9)
     {
@@ -32,7 +32,7 @@ int _int(va_list args)
     }
     while (mul >= 1)
     {
-        numcount += _putchar(((num / div) % 10) + 0);
+        numcount += _putchar(((num / mul) % 10) + '0');
         mul /= 10;
     }
 
