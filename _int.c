@@ -12,7 +12,7 @@ int _int(va_list args)
     long int num = va_arg(args, int);
     int numcount = 0;
     int mul = 1;
-    int div;
+    long int div;
 
     if (num < 0)
     {
