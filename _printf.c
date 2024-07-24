@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
- * _printf - printf command
+ * _printf - printf command.
  *
- * @format: specifier
+ * @format: specifier.
  *
- * Return: numcount
+ * Return: numcount.
  */
-
 int _printf(const char *format, ...)
 {
 	int i = 0, numcount = 0;
