@@ -23,14 +23,7 @@ int _printf(const char *format, ...)
     {
         if (format[i] == '%')
         {
-            if (format[i + 1] == '\0')
-                return (-1);
-
-            int result = _format(format[i + 1], args);
-            if (result == -1)
-                return (-1);
-
-            numcount += result;
+            numcount += _format(format[i + 1], args);/*take the specifier*/
             i++;
         }
         else
