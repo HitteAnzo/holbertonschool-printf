@@ -31,10 +31,10 @@
 To use `_printf`, simply include `main.h` and compile your program with the source files.
 
 You can compile using : 
-- $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -o my_printf *.c
+- `$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -o my_printf *.c`
 
 ## Contributors
-Chatillon Jordan
-Hitte Anzo
+- Chatillon Jordan.
+- Hitte Anzo.
 
 ![Logo Holberton](https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/68c915164905349.63fe8050e15ef.png)
