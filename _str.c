@@ -21,7 +21,7 @@ int _str(va_list args)
         return (6);
     }
 
-    if (str[i] == '')
+    if (str[i] == '\0')
     {
         return (0);
     }
