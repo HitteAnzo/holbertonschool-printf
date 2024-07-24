@@ -23,7 +23,7 @@ int _format(const char type, va_list args)
     while(spec[i].specifiers)
     {
         if(type == spec[i].specifiers)
-            return(spec[i].specifiers);
+            return(spec[i].f(args));
         i++;
     }
 
