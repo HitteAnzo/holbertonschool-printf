@@ -19,15 +19,15 @@ int _format(const char type, va_list args)
 		{0, NULL}
 	};
 
-	while(spec[i].specifiers)
+	while (spec[i].specifiers)
 	{
-		if(type == spec[i].specifiers)
-			return(spec[i].f(args));
+		if (type == spec[i].specifiers)
+			return (spec[i].f(args));
 		i++;
 	}
 
 	_putchar('%');
 	_putchar(type);
 
-	return(2);
+	return (2);
 }
