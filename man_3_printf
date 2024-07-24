@@ -1,24 +1,17 @@
-.TH _PRINTF 24 "July 2024"  "HolbertonSchool Team project in "
+.TH _PRINTF 1 "July 2024" "Holberton School Team Project" "User Commands"
 
 .SH NAME
-
-_printf
+_printf \- custom printf function
 
 .SH SYNOPSIS
-
 .B #include "main.h"
 .PP
 .B int _printf(const char *format, ...)
 .BR "..." 
 
-.B int _printf(const char *format, ...)
-.B ...)
-
 .SH DESCRIPTION
-
 .PP
-
-produce output to stdout according to a format described below similar to printf() function.
+The _printf function produces output to stdout according to a format specified below, similar to the standard printf() function.
 
 .SH OPTIONS
 .RS
@@ -26,7 +19,7 @@ produce output to stdout according to a format described below similar to printf
 .B %c
 Prints a single character.
 .B %s
-Prints a string. If the string is NULL, it prints "(null)". If the string is empty, it prints nothing.
+Prints a string.
 .B %%
 Prints a single percentage sign to the stream.
 .B %i
@@ -36,44 +29,48 @@ Prints a signed decimal integer.
 .RE
 
 .SH EXAMPLES
-
-.B With main.c we can test our functions
-
-{
-	int len;
-	int len2;
-	unsigned int ui;
-	void *addr;
-
-	len = _printf("Let's try to printf a simple sentence.\n");
-	len2 = printf("Let's try to printf a simple sentence.\n");
-	ui = (unsigned int)INT_MAX + 1024;
-	addr = (void *)0x7ffe637541f0;
-	_printf("Length:[%d, %i]\n", len, len);
-	printf("Length:[%d, %i]\n", len2, len2);
-	_printf("Negative:[%d]\n", -762534);
-	printf("Negative:[%d]\n", -762534);
-	_printf("Unsigned:[%u]\n", ui);
-	printf("Unsigned:[%u]\n", ui);
-	_printf("Unsigned octal:[%o]\n", ui);
-	printf("Unsigned octal:[%o]\n", ui);
-	_printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-	printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-	_printf("Character:[%c]\n", 'H');
-	printf("Character:[%c]\n", 'H');
-	_printf("String:[%s]\n", "I am a string !");
-	printf("String:[%s]\n", "I am a string !");
-	_printf("Address:[%p]\n", addr);
-	printf("Address:[%p]\n", addr);
-	len = _printf("Percent:[%%]\n");
-	len2 = printf("Percent:[%%]\n");
-	_printf("Len:[%d]\n", len);
-	printf("Len:[%d]\n", len2);
-	_printf("Unknown:[%r]\n");
-	printf("Unknown:[%r]\n");
-	return (0);
-}
+.PP
+The following example demonstrates how to use the \fB_printf\fR function:
+.nf
+.B #include "main.h"
+.B 
+.B int main(void)
+.B {
+.B     int len;
+.B     int len2;
+.B     unsigned int ui;
+.B     void *addr;
+.B 
+.B     len = _printf("Let's try to printf a simple sentence.\n");
+.B     len2 = printf("Let's try to printf a simple sentence.\n");
+.B     ui = (unsigned int)INT_MAX + 1024;
+.B     addr = (void *)0x7ffe637541f0;
+.B 
+.B     _printf("Length:[%d, %i]\n", len, len);
+.B     printf("Length:[%d, %i]\n", len2, len2);
+.B     _printf("Negative:[%d]\n", -762534);
+.B     printf("Negative:[%d]\n", -762534);
+.B     _printf("Unsigned:[%u]\n", ui);
+.B     printf("Unsigned:[%u]\n", ui);
+.B     _printf("Unsigned octal:[%o]\n", ui);
+.B     printf("Unsigned octal:[%o]\n", ui);
+.B     _printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+.B     printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+.B     _printf("Character:[%c]\n", 'H');
+.B     printf("Character:[%c]\n", 'H');
+.B     _printf("String:[%s]\n", "I am a string !");
+.B     printf("String:[%s]\n", "I am a string !");
+.B     _printf("Address:[%p]\n", addr);
+.B     printf("Address:[%p]\n", addr);
+.B     len = _printf("Percent:[%%]\n");
+.B     len2 = printf("Percent:[%%]\n");
+.B     _printf("Len:[%d]\n", len);
+.B     printf("Len:[%d]\n", len2);
+.B     _printf("Unknown:[%r]\n");
+.B     printf("Unknown:[%r]\n");
+.B     return (0);
+.B }
+.RE
 
 .SH AUTHORS
-
 Hitte Anzo, Chatillon Jordan.
