@@ -20,11 +20,6 @@ int _str(va_list args)
         _putchar(')');
         return (6);
     }
-    
-    if (str[0] != '\0')
-    {
-        return (0);
-    }
 
     while (str[i] != '\0')
     {
