@@ -21,6 +21,11 @@ int _str(va_list args)
         return (6);
     }
 
+    if (str[0] == '')
+    {
+        return 0; // Rien à imprimer
+    }
+
     while (str[i] != '\0')
     {
         _putchar(str[i]);
