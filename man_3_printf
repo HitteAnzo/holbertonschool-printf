@@ -1,0 +1,53 @@
+.TH _PRINTF 24 "July 2024"  "HolbertonSchool Team project in "
+
+.SH NAME
+
+_printf
+
+.SH SYNOPSIS
+
+.B #include "main.h"
+.PP
+.B int _printf(const char *format, ...)
+.BR "..." 
+
+.B int _printf(const char *format, ...)
+.B ...)
+
+.SH DESCRIPTION
+
+.PP
+
+produce output to stdout according to a format described below similar to printf() function.
+
+.SH OPTIONS
+.RS
+.nf
+.B %c
+Prints a single character.
+.B %s
+Prints a string. If the string is NULL, it prints "(null)". If the string is empty, it prints nothing.
+.B %%
+Prints a single percentage sign to the stream.
+.B %i
+Prints a signed decimal integer.
+.B %d
+Prints a signed decimal integer.
+.RE
+
+.SH EXAMPLES
+
+.B With main.c we can test our functions
+To print "50", "Quel âge avez-vous?", "A"
+
+{
+    char chiffre = "50";
+    char ligne = "Quel âge avez-vous?";
+    char lettre = "A"
+    _printf("%d, %s, %c", chiffre, ligne, lettre);
+    return(0);
+}
+
+.SH AUTHORS
+
+Hitte Anzo, Chatillon Jordan.
