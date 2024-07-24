@@ -28,7 +28,8 @@ int _printf(const char *format, ...)
         }
         else
         {
-            numcount += _putchar(format[i]);
+            numcount ++;
+             _putchar(format[i]);
         }
     }
     va_end(args);

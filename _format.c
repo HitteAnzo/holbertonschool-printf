@@ -10,7 +10,6 @@
 int _format(const char type, va_list args)
 {
     int i = 0;
-    int numcount = 0;
 
     specifiers_t spec[] = {
         {'c', _char},
@@ -24,15 +23,12 @@ int _format(const char type, va_list args)
     while(spec[i].specifiers)
     {
         if(type == spec[i].specifiers)
-            numcount += spec[i].f(args);
+            return(spec[i].f(args));
         i++;
     }
 
-    if (numcount == 0)
-    {
-        numcount += _putchar('%');
-        numcount += _putchar(type);
-    }
+    _putchar('%');
+    _putchar(type);
 
-    return(numcount);
+    return(2);
 }

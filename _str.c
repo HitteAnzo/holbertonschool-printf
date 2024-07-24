@@ -21,6 +21,11 @@ int _str(va_list args)
         return (6);
     }
 
+    if (str[i] == '\0')
+    {
+        return (0);
+    }
+
     while (str[i] != '\0')
     {
         _putchar(str[i]);
