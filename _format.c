@@ -4,7 +4,7 @@
  * _format - function specifiers.
  * @type: conversion specifiers.
  * @args: arguments.
- * Return: numcount.
+ * Return: specifier.
  */
 int _format(const char type, va_list args)
 {
